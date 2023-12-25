@@ -1,4 +1,3 @@
-let total=((a,b)=>{
-  return a+b
-})
-console.log(total(10,20));
+// Document object model
+console.log("hello");
+window.console.log(window);
