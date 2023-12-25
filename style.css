@@ -1,7 +1,18 @@
-button{
-    color: red;
-    border-radius: 3px;
+button {
+  color: red;
+  border-radius: 3px;
 }
-h1{
-    color: darkblue;
+h1 {
+  color: darkblue;
+  font-weight: 100;
+}
+.box{
+    height: 100px;
+    width: 200px;
+    border: 9px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 2px;
+    margin-top: 10px;
+    background-color: aquamarine;
 }
