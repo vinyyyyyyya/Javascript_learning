@@ -1,5 +1,7 @@
 let boxes = document.querySelectorAll(".box");
 let resetBtn = document.getElementById("rstbtn");
+resetBtn.disabled=true;
+resetBtn.style.opacity="0.5"
 let turno = true;
 let winningPattern = [
   [0, 1, 2],
@@ -35,7 +37,8 @@ const checkWinner = () => {
     let pos3 = boxes[pattern[2]].innerText;
     if (pos1 && pos2 && pos3) {
       if (pos1 === pos2 && pos2 === pos3) {
-        console.log(`winner is ${pos1}`);
+        resetBtn.disabled=false;
+        resetBtn.style.opacity="1"
         var winner = document.createElement("p");
         winner.innerText = `winner is ${pos1}`;
         winner.style.fontSize = "40px";
